@@ -49,7 +49,7 @@ else {
     //
     // Otherwise, exports the express app object for use in tests.
     //
-    module.exports = {
+    modul.exports = {
         app,
     };
 }
