@@ -41,7 +41,7 @@ if (require.main === module) {
     //
     // When this script is run as the entry point, starts the HTTP server.
     //
-    app.liste(PORT, () => {
+    app.listen(PORT, () => {
         console.log(`Microservice online.`);
     });
 }
@@ -49,7 +49,7 @@ else {
     //
     // Otherwise, exports the express app object for use in tests.
     //
-    modul.exports = {
+    module.exports = {
         app,
     };
 }
